@@ -1,0 +1,76 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main(void){
+    long long int a,b,c;
+    while(scanf("%lld %lld %lld",&a,&b,&c)!=EOF)
+    {
+                    if(a>b&&b>=c)
+                    {
+                                if(c+b>a)
+                                {
+                                         printf("B\n");
+                                }
+                                else
+                                {
+                                    printf("A\n");
+                                }
+                    }
+                    if(a>c&&c>b)
+                    {
+                         if(c+b>a)
+                         {
+                                  printf("C\n");
+                         }
+                         else
+                         {
+                             printf("A\n");
+                         }
+                    }
+                    if(b>c&&c>=a)
+                    {
+                                if(c+a>b)
+                                {
+                                         printf("C\n");
+                                }
+                                else
+                                {
+                                    printf("B\n");
+                                }
+                    }
+                    if(b>a&&a>c)
+                    {
+                         if(c+a>b)
+                         {
+                                  printf("A\n");
+                         }
+                         else
+                         {
+                             printf("B\n");
+                         }
+                    }
+                    if(c>b&&b>=a)
+                    {
+                                if(a+b>c)
+                                {
+                                         printf("B\n");
+                                }
+                                else
+                                {
+                                    printf("C\n");
+                                }
+                    }
+                    if(c>a&&a>b)
+                    {
+                         if(a+b>c)
+                         {
+                                  printf("A\n");
+                         }
+                         else
+                         {
+                             printf("C\n");
+                         }
+                    }
+    }
+system("pause");
+return 0;
+}

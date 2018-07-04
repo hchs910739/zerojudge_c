@@ -1,0 +1,64 @@
+#include<iostream>
+using namespace std;
+main(){
+       long long int a,b,c;
+       while(cin>>a>>b>>c)
+       {
+                          if(c>a&&c>b)
+                          {
+                                      if(a+b>c)
+                                      {
+                                               if(a>b)
+                                               {
+                                                      cout<<"A"<<endl;
+                                               }
+                                               else
+                                               {
+                                                   cout<<"B"<<endl;
+                                               }
+                                      }
+                                      else
+                                      {
+                                          cout<<"C"<<endl;
+                                      }
+                          }
+                          if(b>a&&b>c)
+                          {
+                                      if(a+c>b)
+                                      {
+                                               if(a>c)
+                                               {
+                                                      cout<<"A"<<endl;
+                                               }
+                                               else
+                                               {
+                                                   cout<<"C"<<endl;
+                                               }
+                                      }
+                                      else
+                                      {
+                                          cout<<"B"<<endl;
+                                      }
+                          }
+                          if(a>b&&a>c)
+                          {
+                                      if(b+c>a)
+                                      {
+                                               if(b>c)
+                                               {
+                                                      cout<<"B"<<endl;
+                                               }
+                                               else
+                                               {
+                                                   cout<<"C"<<endl;
+                                               }
+                                      }
+                                      else
+                                      {
+                                          cout<<"A"<<endl;
+                                      }
+                          }
+       }
+system("pause");
+return 0;
+}

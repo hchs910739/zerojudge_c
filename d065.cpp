@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+main(){
+       int x,y,z;
+       while(cin>>x>>y>>z)
+       {
+       if(x>y&&y>z){
+                 cout<<x<<endl;
+                 }
+       if(x>z&&z>y){
+                 cout<<x<<endl;
+                 }
+       if(y>x&&x>z){
+                 cout<<y<<endl;
+                 }
+       if(y>z&&z>x){
+                 cout<<y<<endl;
+                 }
+       if(z>y&&y>x){
+                 cout<<z<<endl;
+                 }
+       if(z>x&&x>y){
+                 cout<<z<<endl;
+                 }
+       if(z>x&&x==y){
+                 cout<<z<<endl;
+                 }
+       if(y>x&&x==z){
+                 cout<<y<<endl;
+                 }
+       if(x>y&&y==z){
+                 cout<<x<<endl;
+                 }
+       if(x==y&&y==z){
+                 cout<<x<<endl;
+                 }
+       if(z==y&&y>x){
+                 cout<<z<<endl;
+                 }
+       if(x==y&&y>z){
+                 cout<<x<<endl;
+                 }
+       if(x==z&&z>y){
+                 cout<<x<<endl;
+                 }
+}
+system("pause");
+return 0;
+}
